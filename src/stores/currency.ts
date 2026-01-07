@@ -8,9 +8,9 @@ export const useCurrencyStore = defineStore('currency', () => {
     const loading = ref(false);
 
     // BCV is typically labeled as 'oficial' or 'bcv' in some APIs, DolarAPI usually uses 'oficial' for BCV
-    const bcv = computed(() => currencies.value.find(c => c.moneda === 'oficial') || currencies.value.find(c => c.moneda === 'usd'));
+    const bcv = computed(() => currencies.value.find(c => c.fuente === 'oficial') || currencies.value.find(c => c.fuente === 'bcv'));
     // Euro
-    const euro = computed(() => currencies.value.find(c => c.moneda === 'euro') || currencies.value.find(c => c.moneda === 'eur'));
+    const euro = computed(() => currencies.value.find(c => c.fuente === 'euro') || currencies.value.find(c => c.fuente === 'eur'));
 
     const fetchRates = async () => {
         loading.value = true;

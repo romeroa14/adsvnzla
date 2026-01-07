@@ -8,13 +8,13 @@
                         Expertos en Trafficker Digital y Estrategias de Crecimiento para Emprendedores y Empresas. Dominamos el arte de vender en Facebook e Instagram Ads.
                     </p>
                     <div class="flex space-x-4">
-                        <!-- Social Icons Placeholders -->
-                        <div class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-colors cursor-pointer">
-                            <i class="ph-facebook-logo text-xl"></i>
-                        </div>
-                        <div class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-colors cursor-pointer">
-                            <i class="ph-instagram-logo text-xl"></i>
-                        </div>
+                        <!-- Social Icons -->
+                        <a href="https://www.instagram.com/ads_vnzla/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center transition-all cursor-pointer shadow-lg hover:scale-110">
+                            <img src="@/assets/Instagram_logo_2022.svg.png" alt="Instagram" class="h-full w-full object-cover rounded-full" />
+                        </a>
+                         <a href="https://wa.me/584222536796" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center transition-all cursor-pointer shadow-lg hover:scale-110">
+                            <img src="@/assets/WhatsApp.svg.webp" alt="WhatsApp" class="h-full w-full object-cover rounded-full" />
+                        </a>
                     </div>
                 </div>
                 
@@ -37,18 +37,18 @@
                         </li>
                         <li class="flex items-center">
                             <span class="mr-2 text-primary">📱</span>
-                            0424-2536795
+                            0422-2536796
                         </li>
                         <li class="flex items-center">
                             <span class="mr-2 text-primary">📧</span>
-                            alfredoromerox21@gmail.com
+                            business@alfredoromero.io
                         </li>
                     </ul>
                 </div>
             </div>
             
             <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
-                <p>&copy; {{ new Date().getFullYear() }} Ads Vzla. Developed by Admetricas.</p>
+                <p>&copy; {{ new Date().getFullYear() }} Ads Vzla. Developed by <a href="https://alfredoromero.io" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">alfredoromero.io</a></p>
                 <div class="flex space-x-6 mt-4 md:mt-0">
                     <a href="#" class="hover:text-white transition-colors">Términos</a>
                     <a href="#" class="hover:text-white transition-colors">Privacidad</a>

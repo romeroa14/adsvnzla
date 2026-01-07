@@ -1,8 +1,8 @@
 export interface ICurrency {
-    moneda: string;
+    fuente: string;
     nombre: string;
-    compra: number;
-    venta: number;
+    compra: number | null;
+    venta: number | null;
     promedio: number;
     fechaActualizacion: string;
 }

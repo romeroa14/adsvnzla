@@ -13,6 +13,9 @@
         
         <!-- Footer -->
         <Footer />
+
+        <!-- Chat Widget -->
+        <WhatsAppBubble />
     </div>
 </template>
 
@@ -20,4 +23,5 @@
 import CurrencyWidget from '../components/widgets/CurrencyWidget.vue';
 import Navbar from '../components/layout/Navbar.vue';
 import Footer from '../components/layout/Footer.vue';
+import WhatsAppBubble from '../components/widgets/WhatsAppBubble.vue';
 </script>

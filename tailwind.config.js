@@ -8,12 +8,12 @@ export default {
         extend: {
             colors: {
                 primary: {
-                    DEFAULT: '#E63946', // Vibrant Red
-                    dark: '#B91C1C',
+                    DEFAULT: '#F2BC2A', // Brand Orange
+                    dark: '#D9A418',
                 },
                 secondary: {
-                    DEFAULT: '#1D3557', // Deep Navy
-                    light: '#457B9D',
+                    DEFAULT: '#760712', // Brand Dark Red
+                    light: '#940B19',
                 },
                 surface: '#F1FAEE', // Off-white
                 dark: '#020617', // Rich Black/Blue
