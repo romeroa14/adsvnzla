@@ -9,6 +9,8 @@ export default {
             colors: {
                 primary: {
                     DEFAULT: '#760712', // Brand Red
+                    light: '#A81423',
+                    vibrant: '#E31227',
                     dark: '#5D050E',
                 },
                 secondary: {
