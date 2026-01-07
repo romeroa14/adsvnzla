@@ -33,7 +33,7 @@ import { useCurrencyStore } from '../../stores/currency';
 import { storeToRefs } from 'pinia';
 
 const store = useCurrencyStore();
-const { bcv, euro, loading } = storeToRefs(store);
+const { bcv, usdt, euro, loading } = storeToRefs(store);
 
 onMounted(() => {
     store.fetchRates();
