@@ -39,7 +39,7 @@ const router = createRouter({
             component: () => import('../views/SocialMediaView.vue')
         }
     ],
-    scrollBehavior(to, from, savedPosition) {
+    scrollBehavior(to, _from, savedPosition) {
         if (savedPosition) {
             return savedPosition;
         }
