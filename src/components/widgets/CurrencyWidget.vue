@@ -11,9 +11,9 @@
                 <span class="font-mono font-semibold text-blue-400">{{ euro.promedio.toFixed(2) }} Bs</span>
             </div>
             <!-- Placeholder for USDT if not in generic API, assuming close to BCV/Paralelo mix or static for now -->
-             <div class="hidden sm:flex items-center space-x-2 border-l border-gray-700 pl-6">
+            <div v-if="usdt" class="hidden sm:flex items-center space-x-2 border-l border-gray-700 pl-6">
                 <span class="font-bold text-gray-300">USDT:</span>
-                <span class="font-mono font-semibold text-teal-400">~{{ (bcv ? bcv.promedio * 1.05 : 0).toFixed(2) }} Bs</span>
+                <span class="font-mono font-semibold text-teal-400">~{{ usdt.promedio.toFixed(2) }} Bs</span>
             </div>
         </div>
         <div v-else class="text-gray-500 italic text-xs">
