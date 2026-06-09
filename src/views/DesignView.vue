@@ -82,20 +82,25 @@
             <!-- Carousel Track -->
             <div class="marquee-container relative flex overflow-x-hidden">
                 <div class="marquee-track flex gap-8 py-8 animate-marquee">
-                    <!-- Images (Duplicated for seamless loop) -->
-                    <div v-for="i in 8" :key="`a-${i}`" class="flex-none w-72 h-96 bg-gray-800 rounded-2xl overflow-hidden relative group border border-gray-700 hover:border-blue-500 transition-colors">
-                        <img :src="`https://picsum.photos/400/600?random=${i}`" alt="Diseño Portfolio" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500 grayscale group-hover:grayscale-0">
-                        <div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                             <span class="text-white font-bold text-lg">Campaña {{ i }}</span>
-                             <p class="text-gray-400 text-xs">Social Media Kit</p>
+                    <div v-for="i in 32" :key="`a-${i}`"
+                         class="flex-none w-72 h-96 bg-gray-800 rounded-2xl overflow-hidden relative group border border-gray-700 hover:border-blue-500 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10">
+                        <img :src="`/servicios/Dgrafico/diseno-${String(i).padStart(2, '0')}.jpeg`"
+                             :alt="`Diseño ${i}`"
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                             <span class="text-white font-bold text-lg">Diseño #{{ String(i).padStart(2, '0') }}</span>
                         </div>
                     </div>
-                     <!-- Duplicates -->
-                    <div v-for="i in 8" :key="`b-${i}`" class="flex-none w-72 h-96 bg-gray-800 rounded-2xl overflow-hidden relative group border border-gray-700 hover:border-blue-500 transition-colors">
-                        <img :src="`https://picsum.photos/400/600?random=${i}`" alt="Diseño Portfolio" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500 grayscale group-hover:grayscale-0">
-                         <div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                             <span class="text-white font-bold text-lg">Campaña {{ i }}</span>
-                             <p class="text-gray-400 text-xs">Social Media Kit</p>
+                    <!-- Duplicates for seamless loop -->
+                    <div v-for="i in 32" :key="`b-${i}`"
+                         class="flex-none w-72 h-96 bg-gray-800 rounded-2xl overflow-hidden relative group border border-gray-700 hover:border-blue-500 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10">
+                        <img :src="`/servicios/Dgrafico/diseno-${String(i).padStart(2, '0')}.jpeg`"
+                             :alt="`Diseño ${i}`"
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                             <span class="text-white font-bold text-lg">Diseño #{{ String(i).padStart(2, '0') }}</span>
                         </div>
                     </div>
                 </div>
@@ -162,7 +167,7 @@
 
 <style scoped>
 .animate-marquee {
-    animation: marquee 40s linear infinite;
+    animation: marquee 80s linear infinite;
 }
 
 @keyframes marquee {
